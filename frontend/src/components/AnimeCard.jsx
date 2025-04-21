@@ -6,7 +6,7 @@ function AnimeCard({show}) {
 
     return <div className = "show-card">
         <div className = "show-poster">
-            <img src="{shows.url}" alt="{shows.title}" />
+            <img src={show.url} alt={show.title} />
             <div className = "show-overlay">
                 <button className = "favorite-btn" onClick = {setFavorite}>
                     ♥
@@ -15,7 +15,7 @@ function AnimeCard({show}) {
         </div>
 
         <div className = "show-info">
-            <h1>{show.title}</h1>
+            <h3>{show.title}</h3>
             <p>{show.release_date}</p>
         </div>
     </div>
